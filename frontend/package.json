@@ -1,0 +1,13 @@
+{
+  "name": "yatrasutra-sih-2026",
+  "version": "1.0.0",
+  "private": true,
+  "description": "YatraSutra cinematic cultural and pilgrimage intelligence SIH prototype",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

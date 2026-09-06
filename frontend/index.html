@@ -1,0 +1,267 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>YatraSutra — Enter Living India</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/time-machine.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/stickers.css">
+<style id="nav-final">
+.yfHeader{position:sticky;top:0;z-index:9999;min-height:78px;padding:0 clamp(18px,5vw,76px);display:flex;align-items:center;gap:28px;background:rgba(247,239,220,.92);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(73,45,26,.13);box-shadow:0 5px 22px rgba(58,35,19,.045)}
+.yfLogo{display:flex;flex-direction:column;font:700 27px/.92 Georgia,'Times New Roman',serif;text-decoration:none;color:#2f2119;margin-right:auto;letter-spacing:-.03em}.yfLogo span{color:#b64f30}.yfLogo small{font:700 7px/1.2 system-ui,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#927b68;margin-top:8px}
+.yfLinks{display:flex;align-items:center;gap:4px;padding:5px;background:rgba(255,250,239,.62);border:1px solid rgba(74,46,28,.10);border-radius:999px}.yfLinks a{position:relative;font:700 11px/1 system-ui,sans-serif;text-decoration:none;color:#554235;padding:12px 15px;border-radius:999px;white-space:nowrap;transition:.2s}.yfLinks a:hover{background:rgba(177,77,48,.09);color:#a9472c}.yfLinks a.active{background:#34261e;color:#fff;box-shadow:0 5px 14px rgba(49,34,25,.14)}
+.yfLang{border:1px solid rgba(68,46,32,.32);background:transparent;color:#443227;border-radius:999px;padding:9px 12px;font:700 10px system-ui;cursor:pointer}.yfMenuBtn{display:none;border:0;background:transparent;font-size:22px;color:#34261e}
+.pageIntro{padding:58px 7vw 24px!important;background:linear-gradient(180deg,#f6ecd7 0%,#f8f0df 100%)!important}.pageIntro h1{font:700 clamp(42px,5.5vw,76px)/.96 Georgia,serif!important;letter-spacing:-.04em;margin:10px 0 14px!important}.pageIntro p{max-width:720px;line-height:1.65;color:#6b5848}
+@media(max-width:960px){.yfHeader{min-height:68px;gap:12px}.yfMenuBtn{display:block}.yfLinks{display:none;position:absolute;top:72px;left:14px;right:14px;padding:10px;border-radius:20px;background:#f8efdc;box-shadow:0 18px 40px rgba(45,28,17,.15);flex-wrap:wrap}.yfLinks.open{display:flex}.yfLinks a{flex:1 1 30%;text-align:center}.yfLang{display:none}}
+</style>
+<style id="circuit-home-patch">
+.circuitPreview{padding:68px 7%;background:#f4e6c9;position:relative;overflow:hidden}
+.circuitPreview .cpHead{max-width:780px;margin-bottom:30px}
+.circuitPreview h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(42px,5vw,70px);line-height:.95;margin:8px 0 12px;color:#34180f}
+.circuitPreview .cpGrid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.circuitCard{position:relative;min-height:320px;border:2px solid #5b2c1b;border-radius:28px;padding:28px;overflow:hidden;box-shadow:9px 9px 0 #5b2c1b;transition:.22s}
+.circuitCard:hover{transform:translate(-3px,-3px);box-shadow:13px 13px 0 #5b2c1b}
+.circuitCard.braj{background:radial-gradient(circle at 88% 12%,#f6b6c0 0 9%,transparent 10%),linear-gradient(135deg,#f3c66f,#f7e7bf)}
+.circuitCard.coast{background:radial-gradient(circle at 86% 15%,#e9b95f 0 8%,transparent 9%),linear-gradient(135deg,#315e4b,#1d3c32);color:#f8e9cb}
+.circuitCard .routeTag{font-size:11px;letter-spacing:2.4px;font-weight:900;text-transform:uppercase;color:#9b3a27}
+.circuitCard.coast .routeTag{color:#efc573}
+.circuitCard h3{font-family:Georgia,'Times New Roman',serif;font-size:clamp(34px,4vw,55px);line-height:.95;margin:18px 0 10px}
+.circuitCard p{max-width:500px;line-height:1.55}
+.circuitStops{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:24px 0 20px;font-weight:800}
+.circuitStops i{width:30px;height:2px;background:currentColor;opacity:.5}
+.circuitSticker{position:absolute;right:24px;bottom:20px;font-size:70px;transform:rotate(8deg);filter:drop-shadow(5px 6px 0 rgba(0,0,0,.12))}
+.circuitCard a{display:inline-block;text-decoration:none;background:#8c2e20;color:white;padding:11px 16px;border-radius:9px;font-weight:900}
+.circuitCard.coast a{background:#e9b95f;color:#2b1a11}
+@media(max-width:760px){.circuitPreview .cpGrid{grid-template-columns:1fr}.circuitCard{min-height:300px}.circuitSticker{font-size:52px;opacity:.7}}
+</style>
+</head><body><style>#spin{display:none!important}#thread{display:none!important}#time{display:none!important}#sonic{display:none!important}#safety{display:none!important}#passport{display:none!important}</style>
+<nav class="yfHeader">
+  <a class="yfLogo" href="index.html">यात्रा<span>Sutra</span><small>not a trip. a story.</small></a>
+  <button class="yfMenuBtn" aria-label="Open menu" onclick="document.querySelector('.yfLinks').classList.toggle('open')">☰</button>
+  <div class="yfLinks">
+    <a data-page="explore" href="explore.html">Explore</a>
+    <a data-page="planner" href="planner.html">Plan Yatra</a>
+    <a data-page="time-machine" href="time-machine.html">Digital Twin</a>
+    <a data-page="experiences" href="experiences.html">Experiences</a>
+    <a data-page="safety" href="safety.html">Safety</a>
+    <a data-page="journal" href="journal.html">My Journey</a>
+  </div>
+  <button class="yfLang" onclick="toggleLang()">अ / EN</button>
+</nav>
+<header class="hero">
+  <!-- Interactive Irregularly Scattered Heritage Stickers -->
+  <div class="sticker-canvas" id="stickerCanvas">
+    <!-- 1. Mandir Temple Bells (from 2nd pic) -->
+    <div class="scatter-sticker sticker-bells" style="--rot: -8deg; --hover-rot: -3deg; top: 7%; left: 5%;" title="🔔 Mandir Temple Bells — Sacred Sound" data-sticker="bells">
+      <img src="assets/stickers/sticker-bells.png" alt="Temple Bells Sticker" loading="eager">
+    </div>
+
+    <!-- 2. Airplane Flight Trail -->
+    <div class="scatter-sticker sticker-plane" style="--rot: 14deg; --hover-rot: 8deg; top: 8%; right: 7%;" title="✈️ Yatra Flight — Moments in the Sky" data-sticker="plane">
+      <img src="assets/stickers/sticker-plane-heart.png" alt="Airplane Flight with Dotted Heart Trail Sticker" loading="eager">
+    </div>
+
+    <!-- 3. Decorated Royal Heritage Elephant -->
+    <div class="scatter-sticker sticker-elephant" style="--rot: 7deg; --hover-rot: 3deg; bottom: 10%; right: 6%;" title="🐘 Decorated Royal Heritage Elephant" data-sticker="elephant">
+      <img src="assets/stickers/sticker-royal-elephant.png" alt="Decorated Royal Elephant Sticker" loading="eager">
+    </div>
+
+    <!-- 4. Shri Krishna Sacred Art (from 2nd pic) -->
+    <div class="scatter-sticker sticker-krishna" style="--rot: -7deg; --hover-rot: -2deg; bottom: 10%; left: 5%;" title="🦚 Shri Krishna — Sacred Heritage" data-sticker="krishna">
+      <img src="assets/stickers/sticker-krishna.png" alt="Shri Krishna Art Sticker" loading="eager">
+    </div>
+
+    <!-- 5. Classical Sitar -->
+    <div class="scatter-sticker sticker-sitar" style="--rot: -22deg; --hover-rot: -15deg; top: 32%; left: 8%;" title="🪕 Classical Sitar — Sonic Heritage" data-sticker="sitar">
+      <img src="assets/stickers/sticker-sitar.png" alt="Indian Sitar Instrument Sticker" loading="eager">
+    </div>
+
+    <!-- 6. Golden Sun Motif -->
+    <div class="scatter-sticker sticker-sun" style="--rot: 6deg; --hover-rot: 16deg; top: 4%; left: 38%;" title="☀️ Surya — Golden Sun Motif" data-sticker="sun">
+      <img src="assets/stickers/sticker-golden-sun.png" alt="Golden Sun Motif Sticker" loading="eager">
+    </div>
+
+    <!-- 7. Feather Quill & Ancient Ink -->
+    <div class="scatter-sticker sticker-quill" style="--rot: -15deg; --hover-rot: -8deg; bottom: 8%; left: 24%;" title="🪶 Feather Quill & Ancient Ink" data-sticker="quill">
+      <img src="assets/stickers/sticker-feather-quill.png" alt="Feather Quill and Ink Sticker" loading="eager">
+    </div>
+
+    <!-- 8. Vintage Butterfly -->
+    <div class="scatter-sticker sticker-butterfly" style="--rot: 18deg; --hover-rot: 25deg; top: 18%; left: 20%;" title="🦋 Vintage Butterfly" data-sticker="butterfly">
+      <img src="assets/stickers/sticker-butterfly.png" alt="Vintage Butterfly Sticker" loading="eager">
+    </div>
+
+    <!-- 9. Sacred Lotus Flower -->
+    <div class="scatter-sticker sticker-lotus" style="--rot: 13deg; --hover-rot: 7deg; bottom: 7%; right: 24%;" title="🪷 Kamal — Sacred Lotus Flower" data-sticker="lotus">
+      <img src="assets/stickers/sticker-lotus.png" alt="Pink Lotus Blossom Sticker" loading="eager">
+    </div>
+
+    <!-- 10. Vintage Open Book -->
+    <div class="scatter-sticker sticker-book" style="--rot: -8deg; --hover-rot: -3deg; bottom: 6%; left: 38%;" title="📖 Sacred Manuscripts & Living Chronicles" data-sticker="book">
+      <img src="assets/stickers/sticker-vintage-book.png" alt="Vintage Manuscript Open Book Sticker" loading="eager">
+    </div>
+  </div>
+
+  <div class="heroContent">
+    <div class="eyebrow">SIH 2026 • LIVING HERITAGE EXPERIMENT</div>
+    <h1>India isn't a destination.<br><span>It's a time machine.</span></h1>
+    <p>Follow a sacred thread through pilgrimages, disappearing sounds, family photographs, artisan stories and traditions that are still alive.</p>
+    <div class="choices">
+      <button class="choice" onclick="location.href='explore.html'">🪔 Surprise me, Bharat</button>
+      <button class="choice" onclick="location.href='planner.html'">🧵 Draw my Yatra</button>
+      <button class="choice" onclick="location.href='time-machine.html'">⏳ Travel through time</button>
+      <button class="choice" onclick="location.href='experiences.html'">🎧 Follow a sound</button>
+    </div>
+  </div>
+</header>
+<section class="circuitPreview">
+  <div class="cpHead">
+    <div class="label">TWO PLACES • TWO LIVING STORIES</div>
+    <h2>Start with a Sutra.</h2>
+    <p class="lead">For the SIH prototype, YatraSutra goes deep instead of going everywhere—two culturally rich circuits with real traditions, sounds, stories and local experiences.</p>
+  </div>
+  <div class="cpGrid">
+    <article class="circuitCard braj">
+      <div class="routeTag">BRAJ • KRISHNA HERITAGE</div>
+      <h3>Vrindavan<br>→ Barsana</h3>
+      <p>Temple rituals, Braj bhasha, Holi traditions, raslila, local food, sacred soundscapes and community stories.</p>
+      <div class="circuitStops"><span>वृन्दावन</span><i></i><span>बरसाना</span></div>
+      <a href="explore.html#braj">Enter Braj →</a>
+      <div class="circuitSticker">🦚</div>
+    </article>
+    <article class="circuitCard coast">
+      <div class="routeTag">SAURASHTRA • SACRED COAST</div>
+      <h3>Somnath<br>→ Dwarka</h3>
+      <p>Jyotirlinga heritage, Krishna's coastal city, temple traditions, sea-linked folklore, devotional music and local craft.</p>
+      <div class="circuitStops"><span>सोमनाथ</span><i></i><span>द्वारका</span></div>
+      <a href="explore.html#saurashtra">Enter Saurashtra →</a>
+      <div class="circuitSticker">🛕</div>
+    </article>
+  </div>
+</section>
+
+
+<section class="wheelSec" id="spin"><div class="wheelWrap"><div><div class="label">01 • Fate meets itinerary</div><h2 class="title">Spin the Chakra.</h2><p class="lead" style="color:#d7c6aa">No boring destination dropdown. Give Bharat a spin and we'll pick a culturally rich journey that fits a student-friendly budget.</p><div id="ticket" class="resultTicket"><div class="label">YOUR YATRA HAS CHOSEN YOU</div><h2 id="tripname">Braj — Where Krishna Still Lives</h2><p id="tripmeta">₹7,850 • 3 days • 4 traditions • 2 artisan experiences</p><button class="stampbtn" onclick="location.href='planner.html'">Tie my YatraSutra →</button></div></div><div class="wheel" id="wheel"><button onclick="spin()">SPIN<br>चक्र</button></div></div></section>
+
+<section class="timeSec" id="time">
+  <div class="label" style="color:#e9b95f">03 • 360° DIGITAL TWIN ARCHIVE</div>
+  <h2 class="title">Step inside Vrindavan.</h2>
+  <p class="lead" style="color:#cdbba7">Explore living 360° panoramic views of Vrindavan's sacred shrines. Drag to look around in 360 degrees, inspect architectural details, and switch between holy temples.</p>
+
+  <div class="v360Shell">
+    <!-- 3 Tabs: Prem Mandir, Banke Bihari Mandir, Nidhivan -->
+    <div class="v360TabsWrap">
+      <div class="v360Tabs">
+        <button class="vTab active" id="vTab0" onclick="switchTemple(0)">
+          <span class="vTabIcon">🏛️</span>
+          <div class="vTabContent">
+            <b>1. Prem Mandir</b>
+            <small>Temple of Divine Love</small>
+          </div>
+        </button>
+        <button class="vTab" id="vTab1" onclick="switchTemple(1)">
+          <span class="vTabIcon">🛕</span>
+          <div class="vTabContent">
+            <b>2. Banke Bihari Mandir</b>
+            <small>Heart of Vrindavan</small>
+          </div>
+        </button>
+        <button class="vTab" id="vTab2" onclick="switchTemple(2)">
+          <span class="vTabIcon">🌿</span>
+          <div class="vTabContent">
+            <b>3. Nidhivan</b>
+            <small>Sacred Raas Leela Grove</small>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Viewer Top Bar -->
+    <div class="v360Top">
+      <div class="v360Live"><span class="liveDot"></span> <span id="v360Tag">360° PANORAMIC VIEW • PREM MANDIR</span></div>
+      <div class="v360Badge" id="v360Location">📍 Raman Reti, Vrindavan</div>
+    </div>
+
+    <!-- Interactive 360 Viewport -->
+    <div class="v360Viewport" id="v360Viewport">
+      <div class="v360Canvas" id="v360Canvas"></div>
+
+      <!-- Compass & Heading Indicator -->
+      <div class="v360Compass" id="v360Compass">
+        <div class="compassDial" id="compassDial">
+          <div class="compassNeedle">▲</div>
+        </div>
+        <span class="compassText" id="compassAngle">360° • 0° N</span>
+      </div>
+
+      <!-- Drag Hint Overlay -->
+      <div class="v360DragHint" id="v360DragHint">
+        <span>↔ DRAG TO PAN 360°</span>
+      </div>
+
+      <!-- Hotspots Overlay -->
+      <div class="v360Hotspots" id="v360Hotspots"></div>
+
+      <!-- Hotspot Details Modal/Card -->
+      <div class="v360InfoCard" id="v360InfoCard">
+        <div class="v360InfoHead">
+          <span class="v360InfoTag">SACRED ARCHIVE</span>
+          <button class="v360InfoClose" onclick="closeHotspotInfo()">×</button>
+        </div>
+        <h4 id="v360InfoTitle">Central Shikhara</h4>
+        <p id="v360InfoText">Stands 54 meters tall, hand-carved with traditional Kalinga and Rajasthani temple motifs.</p>
+      </div>
+
+      <!-- HUD Controls Overlay -->
+      <div class="v360Controls">
+        <button class="vCtrlBtn" id="btnAutoRotate" onclick="toggleAutoRotate()" title="Toggle Auto-Rotation">🔄 Auto-Rotate: ON</button>
+        <button class="vCtrlBtn" onclick="zoomIn()" title="Zoom In">🔍 ＋</button>
+        <button class="vCtrlBtn" onclick="zoomOut()" title="Zoom Out">🔍 －</button>
+        <button class="vCtrlBtn" onclick="resetPano()" title="Reset View">↺ Reset</button>
+      </div>
+    </div>
+
+    <!-- Active Temple Heritage Details Card -->
+    <div class="v360Details">
+      <div class="v360DetailsMain">
+        <div class="label" id="templeBadge" style="color:#e9b95f">VRINDAVAN DHAM • SACRED ARCHITECTURE</div>
+        <h3 id="templeTitle">Prem Mandir</h3>
+        <div class="templeMeta" id="templeMeta">Inaugurated 2012 • 54m Pure Italian Carrara Marble</div>
+        <p id="templeDesc">Carved completely from pristine white Italian Carrara marble, Prem Mandir stands as an architectural marvel dedicated to Radha Krishna and Sita Rama.</p>
+      </div>
+      <div class="v360DetailsAction">
+        <div class="v360Stats">
+          <div><small>TYPE</small><b id="templeType">White Marble Mandir</b></div>
+          <div><small>TRADITION</small><b id="templeTradition">Radha Krishna Bhakti</b></div>
+        </div>
+        <button class="stampbtn" onclick="openHotspot(0)" style="margin-top:10px">Explore Sacred Details →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sonic" id="sonic"><div class="label" style="color:#e9b95f">04 • Sonic heritage</div><h2 class="title">Close your eyes.<br>Where are you?</h2><div class="wave">▂▅▇▃▆▂▇▅▂</div><button class="listen" onclick="reveal()">▶ LISTEN</button><div id="reveal" style="display:none"><h2 style="font-family:'Yatra One';font-size:38px">VARANASI • DASHASHWAMEDH GHAT</h2><p>Temple bells • river ambience • evening aarti<br>Saved to your Sonic Yatra Journal ✓</p><button class="stampbtn" onclick="recordSonic()">● Record my sonic capsule</button><p id="recordStatus"></p></div></section>
+
+<section class="swapSec"><div class="label">05 • CultureSwap</div><h2 class="title">Don't buy culture.<br>Exchange with it.</h2><p class="lead">Travellers trade a useful modern skill for traditional knowledge—creating a two-way relationship with heritage keepers.</p><div class="swipe" id="card"><div class="artisan" id="emoji">🏺</div><h3 id="aname">Meera • Jaipur</h3><p id="bio">32 years preserving Blue Pottery</p><div class="barter"><div><b>YOU LEARN</b><br><span id="learn">Blue pottery</span></div><div style="font-size:25px">↔</div><div><b>YOU HELP</b><br><span id="help">Product photography</span></div></div><div class="swipeBtns"><button class="pass" onclick="next()">← PASS</button><button class="match" onclick="match()">CULTURESWAP →</button></div></div></section>
+
+<section class="safety" id="safety"><div class="label">06 • Pilgrim safety concept</div><h2 class="title">No bars. Still connected.</h2><p class="lead">A zero-signal SOS concept where nearby devices can relay a lost-family or emergency ping locally until it reaches a connected help point.</p><div class="phone"><div class="label" style="color:#e9b95f">OFFLINE • MESH MODE</div><div class="dots"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div><button class="sos" id="sos" onclick="sendSOS()">SOS</button><p id="sostxt">3 nearby relay devices detected</p></div></section>
+
+<section class="final" id="passport"><div><div class="label" style="color:#f2c16b">07 • Your living passport</div><h2 class="title">You didn't just visit.<br>You became part of the archive.</h2><div class="passport"><div class="logo" style="color:#efc573">भारत • HERITAGE PASSPORT</div><div class="stamps"><div class="stamp">मथुरा<br>✓</div><div class="stamp">वृन्दावन<br>✓</div><div class="stamp">काशी<br>✓</div></div><p id="passportStats">Loading your persistent journey…</p><div id="docOut" class="docOut"></div><button class="stampbtn" onclick="generateDocumentary(this)">▶ Generate my Yatra Documentary</button></div></div></section>
+
+<div class="modal" id="plannerM"><div class="modalCard"><button class="close" onclick="closeM('plannerM')">×</button><div class="label">AI YATRA PLANNER</div><h2 class="title" style="font-size:44px">Make the Sutra yours.</h2><div class="plannerInputs"><input id="pCity" value="Delhi" placeholder="Starting city"><input id="pBudget" value="20000" type="number" placeholder="Budget ₹"><select id="pDays"><option>3 days</option><option selected>6 days</option><option>8 days</option></select><select id="pInterest"><option>Krishna Heritage</option><option>Shiva & Sacred Rivers</option><option>Interfaith Heritage</option><option>Buddhist Heritage</option></select><select id="pMode"><option>Budget</option><option>Comfortable</option><option>Senior-friendly</option></select><select><option>2 travellers</option><option>1 traveller</option><option>4 travellers</option></select></div><button class="stampbtn" style="margin:18px 0" onclick="makePlan()">Generate my Yatra ✦</button><div id="planOut"></div></div></div>
+
+<div class="modal" id="swapM"><div class="modalCard"><button class="close" onclick="closeM('swapM')">×</button><div class="label">ADOPT A TRADITION</div><h2 class="title" style="font-size:44px">Live it like a local.</h2><div class="modalGrid"><div class="miniCard"><b>🍲 Cook with a Braj family</b>Learn festive food traditions • Mathura<br><small>Half day • Community hosted</small><br><button class="stampbtn" onclick="bookDemo(this)">Add experience</button></div><div class="miniCard"><b>🏺 Blue Pottery Workshop</b>Create with a Jaipur artisan family<br><small>2.5 hours • Hands-on</small><br><button class="stampbtn" onclick="bookDemo(this)">Add experience</button></div><div class="miniCard"><b>🎶 Folk Evening</b>Stories, instruments and songs of Rajasthan<br><small>Evening • Small group</small><br><button class="stampbtn" onclick="bookDemo(this)">Add experience</button></div><div class="miniCard"><b>🧵 Weaver's Table</b>Understand Banarasi loom traditions<br><small>2 hours • Varanasi</small><br><button class="stampbtn" onclick="bookDemo(this)">Add experience</button></div></div></div></div>
+
+<div class="modal" id="sevaM"><div class="modalCard"><button class="close" onclick="closeM('sevaM')">×</button><div class="label">SEVA CREDIT WALLET</div><h2 class="title" style="font-size:44px">Good karma, visible impact.</h2><h3>🪙 240 Seva Credits</h3><div class="sevaRow"><span>🍛 Langar service • 2 hours</span><b>+120</b></div><div class="sevaRow"><span>🧹 Ghat cleanup • 1 hour</span><b>+70</b></div><div class="sevaRow"><span>👵 Elderly pilgrim assistance</span><b>+50</b></div><p>Redeem with participating community stays, workshops and local transport partners.</p><button class="stampbtn" onclick="redeemSeva(this)">Redeem 50 credits</button></div></div>
+
+<div class="modal" id="queueM"><div class="modalCard"><button class="close" onclick="closeM('queueM')">×</button><div class="label">ETHICAL PRIORITY ACCESS • CONCEPT</div><h2 class="title" style="font-size:44px">Need before wealth.</h2><div class="priority">♿ <b>Accessibility need</b><br>Verified mobility requirement • Priority recommended</div><div class="priority">🤰 <b>Pregnancy</b><br>Verified assistance lane eligibility</div><div class="priority">🩺 <b>Medical vulnerability</b><br>Verification required through authorized provider</div><p><small>Prototype demonstrates a transparent eligibility flow—not a live temple queue or medical verification system.</small></p><button class="stampbtn" onclick="this.innerText='DEMO REQUEST CREATED ✓'">Request assisted access</button></div></div>
+<footer><div><b>YatraSutra</b><br><small>Plan • Experience • Preserve</small></div><small>SIH 2026 concept prototype • Demo data<br>India's heritage, told by the people who live it.</small></footer>
+<script src="data/destinations.js"></script>
+<script src="data/artisans.js"></script>
+<script src="data/heritage-timeline.js"></script>
+<script src="js/api.js"></script>
+<script src="js/app.js"></script>
+<script src="js/yatra-planner.js"></script>
+<script src="js/time-machine.js?v=vrindavan360"></script>
+<script src="js/culture-swap.js"></script>
+<script src="js/sonic-heritage.js?v=2"></script>
+<script src="js/safety.js"></script>
+<script src="js/stickers.js"></script></body></html>

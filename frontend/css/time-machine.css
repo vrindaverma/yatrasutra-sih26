@@ -1,0 +1,63 @@
+.tmShell{margin-top:30px;border:1px solid #b58b5a;border-radius:26px;overflow:hidden;background:#0c0c0b;box-shadow:0 30px 90px #0008}
+.tmTop,.tmFoot{display:flex;justify-content:space-between;gap:15px;align-items:center;padding:13px 18px;font-size:10px;letter-spacing:1.5px;color:#d7bea0;background:#171411}.liveDot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#d74c38;box-shadow:0 0 12px #d74c38;margin-right:7px;animation:blink 1s infinite}@keyframes blink{50%{opacity:.3}}
+.timePortal{height:min(66vh,610px);min-height:480px;position:relative;overflow:hidden;isolation:isolate;background:#332319}
+.eraLayer{position:absolute;inset:0;background-position:center;background-size:cover;transition:filter .15s,opacity .2s,transform .2s}
+.oldEra{background-image:linear-gradient(#5b3d2030,#110d09aa),url('../assets/heritage-monument.svg');filter:sepia(1) grayscale(.75) contrast(1.15) brightness(.72);transform:scale(1.03)}
+.newEra{background-image:linear-gradient(#00000008,#00000066),url('../assets/heritage-monument.svg');clip-path:inset(0 0 0 46%);filter:saturate(1.15) brightness(.95);transform:scale(1.03)}
+.portalBeam{position:absolute;z-index:5;top:0;bottom:0;left:46%;width:3px;background:#f1c36e;box-shadow:0 0 16px #f1c36e,0 0 55px #f1c36eaa}.portalBeam:before,.portalBeam:after{content:"";position:absolute;left:-8px;width:19px;height:19px;border:2px solid #f1c36e;border-radius:50%;background:#16110e}.portalBeam:before{top:18px}.portalBeam:after{bottom:18px}.portalBeam span{position:absolute;top:50%;left:12px;white-space:nowrap;background:#1b1511cc;border:1px solid #e9bd6b;padding:7px 9px;border-radius:8px;color:#f5d596;font-size:9px;letter-spacing:2px}
+.scanNoise{position:absolute;z-index:3;inset:0;pointer-events:none;opacity:.15;background:repeating-linear-gradient(0deg,#fff0 0 3px,#fff 4px,#fff0 5px);mix-blend-mode:overlay;animation:scan 7s linear infinite}@keyframes scan{from{transform:translateY(-20px)}to{transform:translateY(20px)}}
+.dateHUD{position:absolute;z-index:6;left:26px;bottom:28px;text-shadow:0 3px 14px #000;color:#fff}.dateHUD small{letter-spacing:4px}.dateHUD .bigyear{font-size:clamp(70px,11vw,145px);line-height:.75;color:#f5d18b}.dateHUD #eraSubtitle{margin-top:18px;max-width:430px}
+.memoryCard{position:absolute;z-index:7;right:24px;top:25px;width:min(330px,38%);background:#f1d9abeb;color:#2a1810;padding:17px;border:1px solid #6e432d;transform:rotate(1deg);box-shadow:9px 9px 0 #17110dcc;transition:.3s}.memoryCard.open{transform:rotate(0) scale(1.04);background:#fff0cf}.memoryCard p{font-size:13px;line-height:1.5}.memoryBtn,.uploadFake,.jumpBtns button{border:1px solid #8c5a37;background:#f4dfb7;color:#321c12;padding:9px 11px;border-radius:8px;font-weight:800;cursor:pointer}
+.timeControls{padding:18px 20px;background:#201a16}.yearTicks{display:flex;justify-content:space-between;color:#b99c7d;font-size:10px}.cinematicSlider{width:100%;margin:13px 0;accent-color:#eab85c}.jumpBtns{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}.jumpBtns button{background:#30251e;color:#e9c98f;border-color:#75563d}.tmFoot .uploadFake{margin-left:auto}.timeFlash{animation:flash .38s}@keyframes flash{0%{filter:brightness(1)}45%{filter:brightness(2.6) sepia(.3)}100%{filter:brightness(1)}}
+@media(max-width:700px){.memoryCard{width:calc(100% - 40px);right:20px;top:18px}.dateHUD{bottom:20px}.dateHUD #eraSubtitle{max-width:80%}.tmTop,.tmFoot{flex-wrap:wrap}.timePortal{min-height:560px}.tmFoot .uploadFake{margin-left:0}}
+
+/* 360° VRINDAVAN DIGITAL TWIN VIEWER */
+.v360Shell{margin-top:25px;border:1px solid #b58b5a;border-radius:26px;overflow:hidden;background:#0c0c0b;box-shadow:0 30px 90px rgba(0,0,0,0.55)}
+.v360TabsWrap{background:#14110e;padding:14px 18px;border-bottom:1px solid rgba(181,139,90,0.25)}
+.v360Tabs{display:flex;gap:12px;overflow-x:auto;scrollbar-width:none}
+.v360Tabs::-webkit-scrollbar{display:none}
+.vTab{flex:1;min-width:210px;background:rgba(48,37,30,0.6);border:1px solid rgba(181,139,90,0.3);border-radius:14px;padding:12px 16px;display:flex;align-items:center;gap:12px;color:#dfceb7;cursor:pointer;transition:all 0.25s ease;text-align:left}
+.vTab:hover{background:rgba(181,139,90,0.18);border-color:#d4a768}
+.vTab.active{background:linear-gradient(135deg,#3d2a1d 0%,#291a11 100%);border:2px solid #eab85c;color:#fff;box-shadow:0 6px 20px rgba(234,184,92,0.2)}
+.vTabIcon{font-size:26px;background:rgba(0,0,0,0.35);padding:6px 10px;border-radius:10px}
+.vTabContent b{display:block;font-size:14px;color:#f7ead1;letter-spacing:0.2px}
+.vTab.active .vTabContent b{color:#f5d18b}
+.vTabContent small{font-size:11px;color:#a89178}
+.v360Top{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;font-size:10px;letter-spacing:1.5px;color:#d7bea0;background:#171411;border-bottom:1px solid rgba(181,139,90,0.15)}
+.v360Live{display:flex;align-items:center;gap:6px;font-weight:700}
+.v360Badge{background:rgba(181,139,90,0.18);border:1px solid rgba(181,139,90,0.4);padding:4px 10px;border-radius:999px;color:#f5d18b}
+.v360Viewport{height:min(65vh,580px);min-height:440px;position:relative;overflow:hidden;background:#000;cursor:grab;user-select:none;touch-action:none}
+.v360Viewport.grabbing{cursor:grabbing}
+.v360Canvas{position:absolute;inset:-30px;background-size:auto 115%;background-position:center center;background-repeat:repeat-x;transition:transform 0.08s ease-out;filter:contrast(1.05) saturate(1.1)}
+.v360Compass{position:absolute;top:18px;left:20px;z-index:10;display:flex;align-items:center;gap:10px;background:rgba(17,14,12,0.78);backdrop-filter:blur(8px);border:1px solid rgba(233,189,107,0.4);padding:6px 12px;border-radius:999px;pointer-events:none}
+.compassDial{width:26px;height:26px;border-radius:50%;border:1px dashed rgba(234,184,92,0.6);position:relative;display:grid;place-items:center;transition:transform 0.1s linear}
+.compassNeedle{color:#e83f3f;font-size:11px;line-height:1}
+.compassText{font-size:10px;font-weight:800;letter-spacing:1.5px;color:#f5d18b}
+.v360DragHint{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);z-index:10;background:rgba(20,15,12,0.85);backdrop-filter:blur(8px);border:1px solid rgba(233,189,107,0.5);padding:8px 16px;border-radius:20px;color:#f5d18b;font-size:10px;font-weight:800;letter-spacing:2px;pointer-events:none;animation:pulseHint 2.5s infinite}
+@keyframes pulseHint{0%,100%{opacity:0.95;transform:translateX(-50%) scale(1)}50%{opacity:0.65;transform:translateX(-50%) scale(0.97)}}
+.v360Hotspots{position:absolute;inset:0;pointer-events:none;z-index:12}
+.panoPin{position:absolute;transform:translate(-50%,-50%);pointer-events:auto;cursor:pointer;display:flex;align-items:center;gap:6px;transition:transform 0.2s ease}
+.panoPin:hover{transform:translate(-50%,-50%) scale(1.15)}
+.pinBeacon{width:22px;height:22px;background:rgba(234,184,92,0.95);border:2px solid #fff;border-radius:50%;box-shadow:0 0 0 4px rgba(234,184,92,0.35),0 0 16px #eab85c;display:grid;place-items:center;font-size:10px;animation:beaconPulse 1.8s infinite}
+@keyframes beaconPulse{0%{box-shadow:0 0 0 0 rgba(234,184,92,0.7),0 0 12px #eab85c}70%{box-shadow:0 0 0 10px rgba(234,184,92,0),0 0 20px #eab85c}100%{box-shadow:0 0 0 0 rgba(234,184,92,0),0 0 12px #eab85c}}
+.pinLabel{background:rgba(17,14,12,0.88);border:1px solid rgba(234,184,92,0.4);padding:4px 8px;border-radius:6px;color:#fff;font-size:10px;font-weight:700;white-space:nowrap;letter-spacing:0.5px}
+.v360InfoCard{position:absolute;z-index:20;right:20px;top:20px;width:min(340px,86%);background:rgba(246,231,201,0.96);backdrop-filter:blur(10px);border:2px solid #603521;border-radius:16px;padding:16px 18px;box-shadow:0 14px 40px rgba(0,0,0,0.6);color:#302016;display:none;animation:cardFade 0.25s ease-out forwards}
+@keyframes cardFade{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
+.v360InfoHead{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.v360InfoTag{font-size:9px;font-weight:800;letter-spacing:1.5px;color:#a84326;background:rgba(168,67,38,0.12);padding:3px 8px;border-radius:4px}
+.v360InfoClose{background:none;border:0;font-size:20px;line-height:1;cursor:pointer;color:#603521;font-weight:800}
+.v360InfoCard h4{margin:0 0 6px;font-size:16px;font-family:Georgia,serif;color:#2a1810}
+.v360InfoCard p{margin:0;font-size:12px;line-height:1.55;color:#553e30}
+.v360Controls{position:absolute;bottom:18px;right:18px;z-index:10;display:flex;gap:6px;flex-wrap:wrap}
+.vCtrlBtn{background:rgba(22,17,14,0.85);backdrop-filter:blur(8px);border:1px solid rgba(234,184,92,0.4);color:#f5d18b;padding:8px 12px;border-radius:8px;font-size:11px;font-weight:700;cursor:pointer;transition:all 0.2s ease}
+.vCtrlBtn:hover{background:#eab85c;color:#24170e}
+.v360Details{padding:22px 24px;background:#171310;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center;border-top:1px solid rgba(181,139,90,0.2)}
+.v360DetailsMain{flex:1 1 500px}
+.v360DetailsMain h3{font-family:Georgia,serif;font-size:26px;margin:4px 0 6px;color:#f7ead1}
+.templeMeta{font-size:12px;color:#eab85c;margin-bottom:8px;font-weight:600}
+.v360DetailsMain p{margin:0;font-size:13px;line-height:1.6;color:#c9b39b;max-width:680px}
+.v360DetailsAction{display:flex;flex-direction:column;gap:10px}
+.v360Stats{display:flex;gap:16px;background:rgba(0,0,0,0.3);padding:10px 14px;border-radius:10px;border:1px solid rgba(181,139,90,0.15)}
+.v360Stats small{display:block;font-size:9px;letter-spacing:1px;color:#a89178}
+.v360Stats b{font-size:12px;color:#f5d18b}
+@media(max-width:768px){.v360Tabs{flex-direction:column}.vTab{min-width:100%}.v360Viewport{height:380px;min-height:380px}.v360Controls{bottom:10px;right:10px}.v360Compass{top:10px;left:10px}}

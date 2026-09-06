@@ -1,0 +1,107 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>YatraSutra — Enter Living India</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/time-machine.css">
+<link rel="stylesheet" href="css/responsive.css"><style id="nav-final">
+.yfHeader{position:sticky;top:0;z-index:9999;min-height:78px;padding:0 clamp(18px,5vw,76px);display:flex;align-items:center;gap:28px;background:rgba(247,239,220,.92);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(73,45,26,.13);box-shadow:0 5px 22px rgba(58,35,19,.045)}
+.yfLogo{display:flex;flex-direction:column;font:700 27px/.92 Georgia,'Times New Roman',serif;text-decoration:none;color:#2f2119;margin-right:auto;letter-spacing:-.03em}.yfLogo span{color:#b64f30}.yfLogo small{font:700 7px/1.2 system-ui,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#927b68;margin-top:8px}
+.yfLinks{display:flex;align-items:center;gap:4px;padding:5px;background:rgba(255,250,239,.62);border:1px solid rgba(74,46,28,.10);border-radius:999px}.yfLinks a{position:relative;font:700 11px/1 system-ui,sans-serif;text-decoration:none;color:#554235;padding:12px 15px;border-radius:999px;white-space:nowrap;transition:.2s}.yfLinks a:hover{background:rgba(177,77,48,.09);color:#a9472c}.yfLinks a.active{background:#34261e;color:#fff;box-shadow:0 5px 14px rgba(49,34,25,.14)}
+.yfLang{border:1px solid rgba(68,46,32,.32);background:transparent;color:#443227;border-radius:999px;padding:9px 12px;font:700 10px system-ui;cursor:pointer}.yfMenuBtn{display:none;border:0;background:transparent;font-size:22px;color:#34261e}
+.pageIntro{padding:58px 7vw 24px!important;background:linear-gradient(180deg,#f6ecd7 0%,#f8f0df 100%)!important}.pageIntro h1{font:700 clamp(42px,5.5vw,76px)/.96 Georgia,serif!important;letter-spacing:-.04em;margin:10px 0 14px!important}.pageIntro p{max-width:720px;line-height:1.65;color:#6b5848}
+@media(max-width:960px){.yfHeader{min-height:68px;gap:12px}.yfMenuBtn{display:block}.yfLinks{display:none;position:absolute;top:72px;left:14px;right:14px;padding:10px;border-radius:20px;background:#f8efdc;box-shadow:0 18px 40px rgba(45,28,17,.15);flex-wrap:wrap}.yfLinks.open{display:flex}.yfLinks a{flex:1 1 30%;text-align:center}.yfLang{display:none}}
+</style></head><body><style>.hero{display:none!important}#spin{display:none!important}#thread{display:none!important}#time{display:none!important}#sonic{display:none!important}.swapSec{display:none!important}#passport{display:none!important}</style>
+<nav class="yfHeader">
+  <a class="yfLogo" href="index.html">यात्रा<span>Sutra</span><small>not a trip. a story.</small></a>
+  <button class="yfMenuBtn" aria-label="Open menu" onclick="document.querySelector('.yfLinks').classList.toggle('open')">☰</button>
+  <div class="yfLinks">
+    <a data-page="explore" href="explore.html">Explore</a>
+    <a data-page="planner" href="planner.html">Plan Yatra</a>
+    <a data-page="time-machine" href="time-machine.html">Digital Twin</a>
+    <a data-page="experiences" href="experiences.html">Experiences</a>
+    <a data-page="safety" class="active" href="safety.html">Safety</a>
+    <a data-page="journal" href="journal.html">My Journey</a>
+  </div>
+  <button class="yfLang" onclick="toggleLang()">अ / EN</button>
+</nav>
+<section class="pageIntro"><div class="label">YATRA SAFETY</div><h1>Stay connected when the network doesn't.</h1><p>The offline mesh SOS concept now lives on its own focused page.</p></section>
+
+<header class="hero"><div class="doodle d1">🪷</div><div class="doodle d2">〰️🛕</div><div class="doodle d3">✦</div><div class="heroContent"><div class="eyebrow">SIH 2026 • LIVING HERITAGE EXPERIMENT</div><h1>India isn't a destination.<br><span>It's a time machine.</span></h1><p>Follow a sacred thread through pilgrimages, disappearing sounds, family photographs, artisan stories and traditions that are still alive.</p><div class="choices"><button class="choice" onclick="go('spin')">🪔 Surprise me, Bharat</button><button class="choice" onclick="go('thread')">🧵 Draw my Yatra</button><button class="choice" onclick="go('time')">⏳ Travel through time</button><button class="choice" onclick="go('sonic')">🎧 Follow a sound</button></div></div></header>
+
+<section class="wheelSec" id="spin"><div class="wheelWrap"><div><div class="label">01 • Fate meets itinerary</div><h2 class="title">Spin the Chakra.</h2><p class="lead" style="color:#d7c6aa">No boring destination dropdown. Give Bharat a spin and we'll pick a culturally rich journey that fits a student-friendly budget.</p><div id="ticket" class="resultTicket"><div class="label">YOUR YATRA HAS CHOSEN YOU</div><h2 id="tripname">Braj — Where Krishna Still Lives</h2><p id="tripmeta">₹7,850 • 3 days • 4 traditions • 2 artisan experiences</p><button class="stampbtn" onclick="openM('plannerM')">Tie my YatraSutra →</button></div></div><div class="wheel" id="wheel"><button onclick="spin()">SPIN<br>चक्र</button></div></div></section>
+
+<section class="timeSec" id="time">
+<div class="label">03 • Digital Twin Archive</div>
+<h2 class="title">Don't view history.<br>Step inside it.</h2>
+<p class="lead" style="color:#cdbba7">Drag the portal across time. The monument, photograph treatment, ambient story and community archive transform with the year.</p>
+
+<div class="tmShell">
+  <div class="tmTop">
+    <div><span class="liveDot"></span> TEMPORAL ARCHIVE <b id="eraName">RESTORATION ERA</b></div>
+    <div id="photoCount">12 PHOTOS ALIGNED</div>
+  </div>
+
+  <div class="timePortal" id="portal">
+    <div class="eraLayer oldEra" id="oldEra"></div>
+    <div class="eraLayer newEra" id="newEra"></div>
+    <div class="scanNoise"></div>
+    <div class="portalBeam" id="beam"><span>↔ DRAG TIME</span></div>
+
+    <div class="dateHUD">
+      <small>YOU ARE NOW IN</small>
+      <div class="bigyear" id="year">1985</div>
+      <div id="eraSubtitle">Restoration records emerge from family albums.</div>
+    </div>
+
+    <div class="memoryCard" id="memoryCard">
+      <div class="label">MEMORY UNLOCKED</div>
+      <b id="memoryTitle">A family photograph becomes evidence.</b>
+      <p id="memoryText">Community photographs reveal façade condition and changes around the monument.</p>
+      <button class="memoryBtn" onclick="toggleMemory()">Open archival note ↗</button>
+    </div>
+  </div>
+
+  <div class="timeControls">
+    <div class="yearTicks"><span>1950</span><span>1975</span><span>2000</span><span>2026</span></div>
+    <input class="slider cinematicSlider" id="range" type="range" min="1950" max="2026" value="1985" oninput="travelTime(this.value)">
+    <div class="jumpBtns">
+      <button onclick="jumpYear(1950)">← 1950</button>
+      <button onclick="jumpYear(1985)">1985</button>
+      <button onclick="jumpYear(2005)">2005</button>
+      <button onclick="jumpYear(2026)">2026 →</button>
+    </div>
+  </div>
+
+  <div class="tmFoot">
+    <span>◉ Crowdsourced visual twin</span>
+    <span>Weathering • restoration • surroundings • seasonal change</span>
+    <button class="uploadFake" onclick="fakeUpload(this)">＋ Add your family's old photo</button>
+  </div>
+</div>
+</section>
+
+<section class="sonic" id="sonic"><div class="label" style="color:#e9b95f">04 • Sonic heritage</div><h2 class="title">Close your eyes.<br>Where are you?</h2><div class="wave">▂▅▇▃▆▂▇▅▂</div><button class="listen" onclick="reveal()">▶ LISTEN</button><div id="reveal" style="display:none"><h2 style="font-family:'Yatra One';font-size:38px">VARANASI • DASHASHWAMEDH GHAT</h2><p>Temple bells • river ambience • evening aarti<br>Saved to your Sonic Yatra Journal ✓</p><button class="stampbtn" onclick="recordSonic()">● Record my sonic capsule</button><p id="recordStatus"></p></div></section>
+
+<section class="swapSec"><div class="label">05 • CultureSwap</div><h2 class="title">Don't buy culture.<br>Exchange with it.</h2><p class="lead">Travellers trade a useful modern skill for traditional knowledge—creating a two-way relationship with heritage keepers.</p><div class="swipe" id="card"><div class="artisan" id="emoji">🏺</div><h3 id="aname">Meera • Jaipur</h3><p id="bio">32 years preserving Blue Pottery</p><div class="barter"><div><b>YOU LEARN</b><br><span id="learn">Blue pottery</span></div><div style="font-size:25px">↔</div><div><b>YOU HELP</b><br><span id="help">Product photography</span></div></div><div class="swipeBtns"><button class="pass" onclick="next()">← PASS</button><button class="match" onclick="match()">CULTURESWAP →</button></div></div></section>
+
+<section class="safety" id="safety"><div class="label">06 • Pilgrim safety concept</div><h2 class="title">No bars. Still connected.</h2><p class="lead">A zero-signal SOS concept where nearby devices can relay a lost-family or emergency ping locally until it reaches a connected help point.</p><div class="phone"><div class="label" style="color:#e9b95f">OFFLINE • MESH MODE</div><div class="dots"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div><button class="sos" id="sos" onclick="sendSOS()">SOS</button><p id="sostxt">3 nearby relay devices detected</p></div></section>
+
+<section class="final" id="passport"><div><div class="label" style="color:#f2c16b">07 • Your living passport</div><h2 class="title">You didn't just visit.<br>You became part of the archive.</h2><div class="passport"><div class="logo" style="color:#efc573">भारत • HERITAGE PASSPORT</div><div class="stamps"><div class="stamp">मथुरा<br>✓</div><div class="stamp">वृन्दावन<br>✓</div><div class="stamp">काशी<br>✓</div></div><p id="passportStats">Loading your persistent journey…</p><div id="docOut" class="docOut"></div><button class="stampbtn" onclick="generateDocumentary(this)">▶ Generate my Yatra Documentary</button></div></div></section>
+
+<div class="modal" id="plannerM"><div class="modalCard"><button class="close" onclick="closeM('plannerM')">×</button><div class="label">AI YATRA PLANNER</div><h2 class="title" style="font-size:44px">Make the Sutra yours.</h2><div class="plannerInputs"><input id="pCity" value="Delhi" placeholder="Starting city"><input id="pBudget" value="20000" type="number" placeholder="Budget ₹"><select id="pDays"><option>3 days</option><option selected>6 days</option><option>8 days</option></select><select id="pInterest"><option>Krishna Heritage</option><option>Shiva & Sacred Rivers</option><option>Interfaith Heritage</option><option>Buddhist Heritage</option></select><select id="pMode"><option>Budget</option><option>Comfortable</option><option>Senior-friendly</option></select><select><option>2 travellers</option><option>1 traveller</option><option>4 travellers</option></select></div><button class="stampbtn" style="margin:18px 0" onclick="makePlan()">Generate my Yatra ✦</button><div id="planOut"></div></div></div>
+
+<div class="modal" id="swapM"><div class="modalCard"><button class="close" onclick="closeM('swapM')">×</button><div class="label">ADOPT A TRADITION</div><h2 class="title" style="font-size:44px">Live it like a local.</h2><div class="modalGrid"><div class="miniCard"><b>🍲 Cook with a Braj family</b>Learn festive food traditions • Mathura<br><small>Half day • Community hosted</small><br><button class="stampbtn" onclick="bookDemo(this)">Add experience</button></div><div class="miniCard"><b>🏺 Blue Pottery Workshop</b>Create with a Jaipur artisan family<br><small>2.5 hours • Hands-on</small><br><button class="stampbtn" onclick="bookDemo(this)">Add experience</button></div><div class="miniCard"><b>🎶 Folk Evening</b>Stories, instruments and songs of Rajasthan<br><small>Evening • Small group</small><br><button class="stampbtn" onclick="bookDemo(this)">Add experience</button></div><div class="miniCard"><b>🧵 Weaver's Table</b>Understand Banarasi loom traditions<br><small>2 hours • Varanasi</small><br><button class="stampbtn" onclick="bookDemo(this)">Add experience</button></div></div></div></div>
+
+<div class="modal" id="sevaM"><div class="modalCard"><button class="close" onclick="closeM('sevaM')">×</button><div class="label">SEVA CREDIT WALLET</div><h2 class="title" style="font-size:44px">Good karma, visible impact.</h2><h3>🪙 240 Seva Credits</h3><div class="sevaRow"><span>🍛 Langar service • 2 hours</span><b>+120</b></div><div class="sevaRow"><span>🧹 Ghat cleanup • 1 hour</span><b>+70</b></div><div class="sevaRow"><span>👵 Elderly pilgrim assistance</span><b>+50</b></div><p>Redeem with participating community stays, workshops and local transport partners.</p><button class="stampbtn" onclick="redeemSeva(this)">Redeem 50 credits</button></div></div>
+
+<div class="modal" id="queueM"><div class="modalCard"><button class="close" onclick="closeM('queueM')">×</button><div class="label">ETHICAL PRIORITY ACCESS • CONCEPT</div><h2 class="title" style="font-size:44px">Need before wealth.</h2><div class="priority">♿ <b>Accessibility need</b><br>Verified mobility requirement • Priority recommended</div><div class="priority">🤰 <b>Pregnancy</b><br>Verified assistance lane eligibility</div><div class="priority">🩺 <b>Medical vulnerability</b><br>Verification required through authorized provider</div><p><small>Prototype demonstrates a transparent eligibility flow—not a live temple queue or medical verification system.</small></p><button class="stampbtn" onclick="this.innerText='DEMO REQUEST CREATED ✓'">Request assisted access</button></div></div>
+<footer><div><b>YatraSutra</b><br><small>Plan • Experience • Preserve</small></div><small>SIH 2026 concept prototype • Demo data<br>India's heritage, told by the people who live it.</small></footer>
+<script src="data/destinations.js"></script>
+<script src="data/artisans.js"></script>
+<script src="data/heritage-timeline.js"></script>
+<script src="js/api.js"></script>
+<script src="js/app.js"></script>
+<script src="js/yatra-planner.js"></script>
+<script src="js/time-machine.js"></script>
+<script src="js/culture-swap.js"></script>
+<script src="js/sonic-heritage.js"></script>
+<script src="js/safety.js"></script></body></html>
