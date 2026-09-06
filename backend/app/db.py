@@ -2,7 +2,7 @@ from pathlib import Path
 import sqlite3
 
 BASE_DIR = Path(__file__).resolve().parents[1]
-DB_PATH = BASE_DIR / "data" / "yatrasutra.db"
+DB_PATH = Path("/tmp") / "yatrasutra.db"
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS journeys(

@@ -9,7 +9,7 @@ import json, shutil, uuid
 
 BASE=Path(__file__).resolve().parents[1]
 FRONTEND=BASE.parent/"frontend"
-UPLOADS=BASE/"uploads"
+UPLOADS=Path("/tmp")/"yatrasutra_uploads"
 (UPLOADS/"sonic").mkdir(parents=True, exist_ok=True)
 (UPLOADS/"heritage").mkdir(parents=True, exist_ok=True)
 
